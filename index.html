@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>cas 20 SPA</title>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+    <link id="main-link" rel="stylesheet" href="main.css">
+</head>
+<body>
+    <div class="jumbotron text-center">
+        <h2 class="display-4">Accounts app</h2>
+        <button id="accountsBtn" class="btn btn-primary">Accounts</button>
+        <button id="addAccountsBtn" class="btn btn-warning">Add Account</button>
+        <button id="editAccountsBtn" class="btn btn-danger">Edit/Delete</button>
+    </div>
+    <div class="container">
+
+        <div id="accounts-view" class="row">
+            <div class="col-10 offset-1">
+                <h3 class="display-5">Accounts</h3>
+                <div class="row">
+                    <div class="col-10 offset-1">
+                        <table class="table">
+                            <thead>
+                                <tr>
+                                    <th>Name</th>
+                                    <th>Last Name</th>
+                                    <th>Email</th>
+                                    <th>Phone</th>
+                                </tr>
+                            </thead>
+                            <tbody id="main-table">
+                            </tbody>
+                        </table>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div id="add-accounts-view" class="row">
+            <div class="col-10 offset-1">
+                <h3 class="display-5">Add Account</h3>
+                <div class="row">
+                    <div class="col-10 offset-1">
+                        <input type="text" name="name" placeholder="Name" class="form-control"><br>
+                        <input type="text" name="lastName" placeholder="Last name" class="form-control"><br>
+                        <input type="text" name="email" placeholder="E-mail" class="form-control"><br>
+                        <input type="text" name="phone" placeholder="Phone" class="form-control"><br>
+                        <button id="saveAccountBtn" class="btn btn-primary form-control">Save</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div id="edit-accounts-view" class="row">
+            <div class="col-10 offset-1">
+                <h3 class="display-5">Edit / Delete</h3>
+                <div class="row">
+                    <div class="col-10 offset-1">
+                        <table class="table">
+                            <thead>
+                                <tr>
+                                    <th>Name</th>
+                                    <th>Last Name</th>
+                                    <th>Email</th>
+                                    <th>Phone</th>
+                                    <th>Edit</th>
+                                    <th>Delete</th>
+                                </tr>
+                            </thead>
+                            <tbody id="edit-table">
+                            </tbody>
+                        </table>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div id="edit-form-view" class="row">
+            <div class="col-10 offset-1">
+                <h3 class="display-5">Edit Account</h3>
+                <div class="row">
+                    <div class="col-10 offset-1">
+                        <input type="text" name="ename" placeholder="Name" class="form-control"><br>
+                        <input type="text" name="elastName" placeholder="Last name" class="form-control"><br>
+                        <input type="text" name="eemail" placeholder="E-mail" class="form-control"><br>
+                        <input type="text" name="ephone" placeholder="Phone" class="form-control"><br>
+                        <button id="editAccountBtn" class="btn btn-success form-control">Edit</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+    </div>
+
+    <script src="db.js"></script>
+    <script src="main.js"></script>
+</body>
+</html>
+
+
+
+
+
